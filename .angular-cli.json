@@ -27,7 +27,6 @@
         "./styles/css/styles.css"
       ],
       "scripts": [
-        "../node_modules/metismenu/dist/metisMenu.min.js",
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/metismenu/dist/metisMenu.min.js",
         "./vendor/pace/pace.min.js",

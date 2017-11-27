@@ -17,21 +17,21 @@ import { User, UserToken, Permissions } from "./app.models"
 
 import {ROUTES} from "./app.routes";
 import { AuthenticatedGuard } from "./app.guards"
-// App modules/components
-import {LayoutsModule} from "./components";
 
 //Libs
 import { ToastModule, ToastOptions } from 'ng2-toastr/ng2-toastr';
 import { CustomOption } from './toastr.options';
 
 // App views
-import { Error404Module,
-         MainViewModule,
-         MinorViewModule,
-         LoginModule,
+import { LayoutsModule,
+         ErrorsModule,
+         // MainViewModule,
+         // MinorViewModule,
+         // LoginModule,
          LogoutModule,
-         RegisterModule,
-         ResetModule } from "./views"
+         // RegisterModule,
+         // ResetModule 
+       } from "./components"
 
 @NgModule({
   declarations: [
@@ -45,13 +45,13 @@ import { Error404Module,
     FormsModule,
 
     // Views
-    MainViewModule,
-    MinorViewModule,
-    LoginModule,
+    // MainViewModule,
+    // MinorViewModule,
+    // LoginModule,
     LogoutModule,
-    RegisterModule,
-    Error404Module,
-    ResetModule,
+    // RegisterModule,
+    ErrorsModule,
+    // ResetModule,
 
     // Modules
     LayoutsModule,
