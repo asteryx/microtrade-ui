@@ -1,15 +1,9 @@
-export * from './common/layouts/basic.component';
-export * from './common/layouts/blank.component';
-export * from './common/layouts/layouts.module';
-export * from './common/errors/error.404.component';
-export * from './common/errors/errors.module';
-export * from './common/footer/footer.component';
-export * from './common/footer/footer.module';
-export * from './common/navigation/navigation.component';
-export * from './common/navigation/navigation.module';
-export * from './common/topnavbar/topnavbar.component';
-export * from './common/topnavbar/topnavbar.module';
+export * from './common/index';
+
+export * from './abstract';
 
 export * from './logout/logout.component';
 export * from './logout/logout.module';
+export * from './login/login.component';
+export * from './login/login.module';
 
