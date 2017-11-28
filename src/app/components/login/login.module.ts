@@ -5,12 +5,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {loginComponent} from "./login.component";
 import { FooterModule, } from "../common";
 import { SpinButtonModule } from '../common'
+import {MatInputModule, MatFormFieldModule} from '@angular/material';
 
 @NgModule({
     declarations: [loginComponent],
     imports     : [BrowserModule, RouterModule, ReactiveFormsModule,
-                   FooterModule, SpinButtonModule
-                   ],
+                   FooterModule, SpinButtonModule, MatInputModule,
+                   MatFormFieldModule],
 })
 
 export class LoginModule {}
