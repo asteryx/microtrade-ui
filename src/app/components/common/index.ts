@@ -9,6 +9,7 @@ export * from './navigation/navigation.component';
 export * from './navigation/navigation.module';
 export * from './topnavbar/topnavbar.component';
 export * from './topnavbar/topnavbar.module';
-
+export * from './spin-button/spin-button.component';
+export * from './spin-button/spin-button.module';
 
 
