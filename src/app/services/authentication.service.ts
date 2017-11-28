@@ -6,7 +6,6 @@ import 'rxjs/add/operator/catch';
 import { User, UserToken } from '../app.models';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-declare var device_id: string;
 
 @Injectable()
 export class AuthenticationService {
@@ -31,14 +30,8 @@ export class AuthenticationService {
     return text;
 
   }
-  private get device_id(){
-    return device_id + this.getRandSuffics();
-  }
 
-  login(user: User) {
-    
-    user["device_id"] = this.device_id
-    
+  login(user: User) {    
     return this.post('/user/login', JSON.stringify(user));
   }
 
@@ -47,8 +40,6 @@ export class AuthenticationService {
   }
 
   register(user: User){
-    user["device_id"] = this.device_id;
-
     return this.post('/user/new', JSON.stringify(user));
   }
 
