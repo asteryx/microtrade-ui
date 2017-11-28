@@ -13,12 +13,7 @@
                 <input type="password" class="form-control" placeholder="Password" name="password" id="password" formControlName="password">
             </div>
 
-            <button type="submit"
-                    color="primary"
-                    mat-button
-                    mat-primary
-                    mat-raised-button
-                    [disabled]="loading || loginForm.invalid">Login<mat-spinner *ngIf="loading" class="btn-spinner" [diameter]="20" color="accent"></mat-spinner></button>
+            <spin-button type="submit" [loading]="loading" [disabled]="!loginForm.invalid" color="primary">login</spin-button>
 
             <a [routerLink]="['/reset']"><small>Forgot password?</small></a>
             <p class="text-muted text-center"><small>Do not have an account?</small></p>

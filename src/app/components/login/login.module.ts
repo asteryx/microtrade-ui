@@ -4,13 +4,13 @@ import {RouterModule} from "@angular/router";
 import { ReactiveFormsModule } from '@angular/forms';
 import {loginComponent} from "./login.component";
 import { FooterModule, } from "../common";
-import {MatButtonModule, MatProgressSpinnerModule} from '@angular/material';
+import { SpinButtonModule } from '../common'
 
 @NgModule({
     declarations: [loginComponent],
     imports     : [BrowserModule, RouterModule, ReactiveFormsModule,
-                   FooterModule, MatButtonModule,
-                   MatProgressSpinnerModule],
+                   FooterModule, SpinButtonModule
+                   ],
 })
 
 export class LoginModule {}
