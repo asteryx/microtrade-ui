@@ -1,3 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+.inline-window{
+	margin-top: 40px;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+	/*box-shadow: 0 0 12px #999;*/
+}
+
+.inline-window .header{
+	background: url('../img/header-skin.png') #3f51b5;
+	color: #c7c7c7;
+	text-align: center;
+	padding: 5px 10px;
+	min-height: 40px;
+}
+
+.inline-window .body{
+	padding: 10px;
+	border: 1px solid #c7c7c7;
+}
+
+.full-width{
+	width: 100%;
+
+}
