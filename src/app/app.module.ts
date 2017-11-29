@@ -29,7 +29,7 @@ import { LayoutsModule,
          // MinorViewModule,
          LoginModule,
          LogoutModule,
-         // RegisterModule,
+         RegisterModule,
          // ResetModule 
        } from "./components"
 
@@ -49,7 +49,7 @@ import { LayoutsModule,
     // MinorViewModule,
     LoginModule,
     LogoutModule,
-    // RegisterModule,
+    RegisterModule,
     ErrorsModule,
     // ResetModule,
 
