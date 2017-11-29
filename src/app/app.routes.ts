@@ -9,7 +9,7 @@ import { blankComponent,
          // mainViewComponent,
          // minorViewComponent,
          loginComponent,
-         // registerComponent,
+         registerComponent,
          logoutComponent,
          // resetComponent,
          // resetConfirmComponent 
@@ -20,7 +20,7 @@ import {  } from "./components";
 
 export const ROUTES:Routes = [
   // Main redirect
-  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
 
   // App views
   // {
@@ -36,7 +36,7 @@ export const ROUTES:Routes = [
     resolve: [AuthenticatedGuard],
     children: [
       { path: 'login', component: loginComponent},
-      // { path: 'register', component: registerComponent },
+      { path: 'register', component: registerComponent },
       // { path: 'reset', component: resetComponent },
       // { path: 'passwordresetconfirm/:uid/:token', component: resetConfirmComponent},
     ]
