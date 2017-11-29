@@ -1,0 +1,42 @@
+<div class="row animated fadeInDown">
+    <div class="col-xs-6 col-xs-offset-3 col-md-5 col-md-offset-3 col-lg-4 col-lg-offset-4">
+        <div class="inline-window">
+            <div class="header">
+                <h3>Microtrade</h3>
+            </div>
+            <div class="body">
+                <p>Register to Microtrade</p>
+                <form class="m-t" role="form" novalidate (ngSubmit)="onSubmit(registerForm)" [formGroup]="registerForm">
+                    
+                    <mat-form-field class="full-width">
+                        <input matInput type="email"  placeholder="Email" name="email" id="email" [maxlength]="150" formControlName="email">
+                    </mat-form-field> 
+
+                    <mat-form-field class="full-width">
+                        <input matInput type="text" placeholder="First Name" name="first_name" id="first_name" formControlName="first_name">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width">
+                        <input matInput type="text" placeholder="Last Name" name="last_name" id="last_name" formControlName="last_name">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width">
+                        <input matInput type="password" placeholder="Password" name="password" id="password" formControlName="password">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width">
+                        <input matInput type="password" placeholder="Password confirmation" name="password2" id="password2" formControlName="password2">
+                    </mat-form-field>
+                    
+                    <spin-button type="submit" [loading]="loading" [disabled]="registerForm.invalid" color="primary">Register</spin-button>
+                    
+                    <div class="text-center margin-top5">
+                        <p class="text-muted"><small>Already have an account?</small></p>
+                        <a mat-button mat-raised-button class="btn btn-sm btn-white" [routerLink]="['/login']">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="m-t footer-wrap"> <small><footer></footer></small> </p>
+    </div>
+</div>
