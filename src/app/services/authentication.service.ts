@@ -14,7 +14,7 @@ export class AuthenticationService {
               public user: User) {
   }
   
-  private prefix: string = '/api/v1'
+  private prefix: string = 'http://localhost:8080/api/v1'
   private post (url: string, data:any){
     return this.http.post(`${ this.prefix }${ url }`, data);
   }
@@ -32,34 +32,30 @@ export class AuthenticationService {
   }
 
   login(user: User) {    
-    return this.post('/user/login', JSON.stringify(user));
+    return this.post('/auth/login', JSON.stringify(user));
   }
 
   logout() {
-    return this.post('/user/logout', JSON.stringify({}));
+    return this.post('/auth/logout', JSON.stringify({}));
   }
 
   register(user: User){
-    return this.post('/user/new', JSON.stringify(user));
+    return this.post('/auth/register', JSON.stringify(user));
   }
 
   resetPassword(user:User){
     let data = {
       "email": user.email
     }
-    return this.post('/user/password/reset', JSON.stringify(data));
+    return this.post('/auth/password/reset', JSON.stringify(data));
   }
 
   recoveryPasswordConfirm(data: any){
-    return this.post('/user/password/confirm', JSON.stringify(data));
-  }
-
-  checkConfirmationInfo(data: any){
-    return this.post('/user/password/confirm/checkinfo', JSON.stringify(data))
+    return this.post('/auth/password/confirm', JSON.stringify(data));
   }
 
   changePassword(data: any){
-    return this.post('/user/password/change', data);
+    return this.post('/auth/password/change', data);
   }
 }
 

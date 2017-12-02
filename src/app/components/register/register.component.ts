@@ -74,7 +74,7 @@ export class registerComponent extends AbstractComponent implements OnInit {
         Validators.pattern(/[^0-9]/),
         NotEqualValidator('email,first_name,last_name')
         ]),
-      password2: new FormControl('', [
+      confirm_password: new FormControl('', [
         Validators.required,
         Validators.minLength(8),
         Validators.maxLength(128),
@@ -87,7 +87,7 @@ export class registerComponent extends AbstractComponent implements OnInit {
   }
 
   keyUpPassword(){
-    this.registerForm.controls['password2'].setValue(this.registerForm.controls['password2'].value);
+    this.registerForm.controls['confirm_password'].setValue(this.registerForm.controls['confirm_password'].value);
   }
 
 

@@ -31,7 +31,7 @@ export class User {
   public first_name: string = '';
   public last_name: string = '';
   public password: string = '';
-  public password2: string = '';
+  public confirm_password: string = '';
 
   constructor(private uToken:UserToken, private permission: Permissions) {
     // code...
