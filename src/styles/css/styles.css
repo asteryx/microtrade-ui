@@ -84,3 +84,7 @@
 .mini-navbar .profile-element{
 	display: none;
 }
+body.mini-navbar .nav-header {
+    padding: 0;
+    background-color: #1ab394;
+}
