@@ -6,7 +6,7 @@ import {AuthenticatedGuard} from "./app.guards"
 import { blankComponent, 
          basicComponent,
          error404Component,
-         // mainViewComponent,
+         dashboardComponent,
          // minorViewComponent,
          loginComponent,
          registerComponent,
@@ -23,14 +23,14 @@ export const ROUTES:Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
 
   // App views
-  // {
-  //   path: '', component: basicComponent,
-  //   canActivate: [AuthenticatedGuard],
-  //   children: [
-  //     {path: 'dashboard', component: mainViewComponent},
-  //     {path: 'minorView', component: minorViewComponent},
-  //   ]
-  // },
+  {
+    path: '', component: basicComponent,
+    canActivate: [AuthenticatedGuard],
+    children: [
+      {path: 'dashboard', component: dashboardComponent},
+      // {path: 'minorView', component: minorViewComponent},
+    ]
+  },
   {
     path: '', component: blankComponent,
     resolve: [AuthenticatedGuard],

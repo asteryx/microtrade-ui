@@ -4,7 +4,8 @@ declare var jQuery:any;
 
 @Component({
     selector: 'topnavbar',
-    templateUrl: 'topnavbar.template.html'
+    templateUrl: 'topnavbar.template.html',
+    styleUrls: ['topnavbar.component.css']
 })
 export class TopnavbarComponent {
 
