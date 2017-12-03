@@ -5,7 +5,8 @@ declare var jQuery:any;
 
 @Component({
     selector: 'navigation',
-    templateUrl: 'navigation.template.html'
+    templateUrl: 'navigation.template.html',
+    styleUrls: ['navigation.component.css']
 })
 
 export class NavigationComponent {

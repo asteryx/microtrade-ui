@@ -1,10 +1,10 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {dashboardViewComponent} from "./dashboard.component";
+import {dashboardComponent} from "./dashboard.component";
 
 @NgModule({
-    declarations: [dashboardViewComponent],
+    declarations: [dashboardComponent],
     imports     : [BrowserModule],
 })
 
-export class DashboardViewModule {}
+export class DashboardModule {}

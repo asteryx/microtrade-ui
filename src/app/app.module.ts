@@ -25,7 +25,7 @@ import { CustomOption } from './toastr.options';
 // App views
 import { LayoutsModule,
          ErrorsModule,
-         // MainViewModule,
+         DashboardModule,
          // MinorViewModule,
          LoginModule,
          LogoutModule,
@@ -45,7 +45,7 @@ import { LayoutsModule,
     FormsModule,
 
     // Views
-    // MainViewModule,
+    DashboardModule,
     // MinorViewModule,
     LoginModule,
     LogoutModule,
