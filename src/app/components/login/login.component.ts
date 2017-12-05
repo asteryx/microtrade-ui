@@ -6,6 +6,8 @@ import { AbstractComponent } from '../abstract'
 import { AuthenticationService } from '../../services';
 import { User } from '../../app.models';
 
+import 'rxjs/add/operator/finally';
+
 @Component({
     selector: 'login',
     templateUrl: 'login.template.html'
