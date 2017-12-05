@@ -7,6 +7,8 @@ import { EqualValidator, NotEqualValidator } from '../../shared';
 import { AuthenticationService } from '../../services';
 import { AbstractComponent } from '../abstract';
 
+import 'rxjs/add/operator/finally';
+
 declare var countries: any;
 
 
