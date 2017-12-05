@@ -14,7 +14,7 @@ export class AuthenticationService {
               public user: User) {
   }
   
-  private prefix: string = 'http://localhost:8080/api/v1'
+  private prefix: string = '/api/v1'
   private post (url: string, data:any){
     return this.http.post(`${ this.prefix }${ url }`, data);
   }
