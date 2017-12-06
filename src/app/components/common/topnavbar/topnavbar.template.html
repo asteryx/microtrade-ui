@@ -4,6 +4,13 @@
   <mat-toolbar-row>
     <button mat-button class="sidenav-toggle" (click)="toggleNavigation()"><mat-icon>reorder</mat-icon></button>
     <span>Custom Toolbar</span>
+    <span class="spacer"></span>
+    <a routerLink="/logout">
+        <mat-icon class="vertical-center">
+            exit_to_app
+        </mat-icon>
+        <span class="vertical-center">Log out</span>
+    </a>
   </mat-toolbar-row>
 </mat-toolbar>
 
