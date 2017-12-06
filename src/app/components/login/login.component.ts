@@ -44,12 +44,16 @@ export class loginComponent  extends AbstractComponent implements OnInit {
   }
 
   login(token: string): void{
-    this.user.login(token);
-    
-    this.activatedRoute.queryParams.subscribe((params: Params) => {
-      let to = params['returnUrl'] || '/';
-      this.router.navigate([to]);
-    });
+    if(token){
+      this.user.login(token);
+      
+      this.activatedRoute.queryParams.subscribe((params: Params) => {
+        let to = params['returnUrl'] || '/';
+        this.router.navigate([to]);
+      });
+    }else{
+      this.toastr.info(this.errorRetrieveData);
+    }
   }
 
   getForm():FormGroup{

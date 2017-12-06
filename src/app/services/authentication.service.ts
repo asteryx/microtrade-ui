@@ -43,10 +43,7 @@ export class AuthenticationService {
     return this.post('/auth/register', JSON.stringify(user));
   }
 
-  resetPassword(user:User){
-    let data = {
-      "email": user.email
-    }
+  resetPassword(data:any){
     return this.post('/auth/password/reset', JSON.stringify(data));
   }
 

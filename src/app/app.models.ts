@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class UserToken {
   
-  private tokenName: string = 'Token';
+  private tokenName: string = 'access_token';
 
   get token(){
     return localStorage.getItem(this.tokenName) || '';

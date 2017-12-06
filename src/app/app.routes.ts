@@ -11,7 +11,7 @@ import { blankComponent,
          loginComponent,
          registerComponent,
          logoutComponent,
-         // resetComponent,
+         ResetPasswordComponent,
          // resetConfirmComponent 
        } from "./components"
 
@@ -37,7 +37,7 @@ export const ROUTES:Routes = [
     children: [
       { path: 'login', component: loginComponent},
       { path: 'register', component: registerComponent },
-      // { path: 'reset', component: resetComponent },
+      { path: 'reset', component: ResetPasswordComponent },
       // { path: 'passwordresetconfirm/:uid/:token', component: resetConfirmComponent},
     ]
   },

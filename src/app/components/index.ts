@@ -10,4 +10,7 @@ export * from './register/register.component';
 export * from './register/register.module';
 export * from './dashboard/dashboard.component';
 export * from './dashboard/dashboard.module';
+export * from './reset-password/reset-password.component';
+export * from './reset-password/reset-password.module';
+
 

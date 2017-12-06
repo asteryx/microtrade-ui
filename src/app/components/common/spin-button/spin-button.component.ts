@@ -24,4 +24,7 @@ export class SpinButtonComponent {
   @Input()
   type: string = "button";
 
+  @Input()
+  class: string = "";
+
 }

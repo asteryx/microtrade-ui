@@ -49,12 +49,16 @@ export class registerComponent extends AbstractComponent implements OnInit {
   }
   
   login(token: string): void{
-    this.user.login(token);
+    if(token){  
+      this.user.login(token);
     
-    this.activatedRoute.queryParams.subscribe((params: Params) => {
-      let to = params['returnUrl'] || '/';
-      this.router.navigate([to]);
-    });
+      this.activatedRoute.queryParams.subscribe((params: Params) => {
+        let to = params['returnUrl'] || '/';
+        this.router.navigate([to]);
+      });
+    }else{
+      this.toastr.error(this.errorRetrieveData);
+    }
   }
 
   get countryList(){
