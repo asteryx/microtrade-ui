@@ -88,3 +88,20 @@ body.mini-navbar .nav-header {
     padding: 0;
     background-color: #1ab394;
 }
+
+
+/*Links*/
+topnavbar a,
+.nav-header a{
+	color: #DFE4ED;
+	text-decoration: none;
+}
+topnavbar a:hover,
+.nav-header a:hover{
+	color: #bccef0;
+	text-decoration: none;
+}
+
+.vertical-center{
+	vertical-align: middle;
+}
