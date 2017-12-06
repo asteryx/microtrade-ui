@@ -16,7 +16,7 @@
                         <input matInput type="password" placeholder="Password" name="password" id="password" formControlName="password">
                     </mat-form-field>
                     
-                    <spin-button type="submit" [loading]="loading" [disabled]="loginForm.invalid" color="primary">login</spin-button>
+                    <spin-button type="submit" class=" mat-primary" [loading]="loading" [disabled]="loginForm.invalid">login</spin-button>
                     
                     <div class="text-center margin-top5">
                         <a [routerLink]="['/reset']"><small>Forgot password?</small></a>
