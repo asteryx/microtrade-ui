@@ -30,8 +30,9 @@ import { LayoutsModule,
          LoginModule,
          LogoutModule,
          RegisterModule,
-         // ResetModule 
-       } from "./components"
+         ResetPasswordModule
+       } from "./components";
+
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { LayoutsModule,
     LogoutModule,
     RegisterModule,
     ErrorsModule,
-    // ResetModule,
+    ResetPasswordModule,
 
     // Modules
     LayoutsModule,
