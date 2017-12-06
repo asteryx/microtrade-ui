@@ -29,6 +29,7 @@ export class AbstractComponent {
     this.toastr.setRootViewContainerRef(vcr);
   }
   public errorCodes: any;
+  public errorRetrieveData: string = 'Server dont retrieve a data';
 
   public handleServerError(resp: any) {
     let errCode = resp['code'] || 0;
