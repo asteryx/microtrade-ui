@@ -8,17 +8,11 @@
     font: 300 14px/16px Roboto,"Helvetica Neue",sans-serif;
 }
 
-.nav-header a{
-	color: #DFE4ED;
-	text-decoration: none;
-}
-.nav-header a:hover{
-	text-decoration: none;
-}
-
 .nav-header mat-icon{
 	font-size: 60px;
     width: 60px;
     height: 60px;
     padding: 1px 0px;
+    color: #DFE4ED;
 }
+
