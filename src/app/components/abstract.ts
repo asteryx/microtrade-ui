@@ -45,25 +45,25 @@ export class AbstractComponent {
     let errors = this.commonErrors();
     update(errors, this.getErrors())
     const codeError: number = this.getErrorCode(resp)
-    const errorString: any = errors[codeError]
+    const errorStr: any = errors[codeError]
 
-    if (errorString){
-      this.toastr.error(errorString);
+    if (errorStr){
+      this.toastr.error(errorStr);
       return
     }
+    const errorString: string = this.getErrorString(resp)
+    this.toastr.error(errorString);
     
-    if (codeError){
-      // this.toastr.error(`Error code ${codeError}`);
-      console.log(`Error code ${codeError}`);
-    }
-    else{
-      this.toastr.error('Error connecting to server');
-    }
   }
 
   protected getErrorCode(resp: any): number{
     const result: any = resp.error || {}
-    return result['error'] || 0
+    return result['code'] || 0
+  }
+
+  protected getErrorString(resp: any): string{
+    const result: any = resp.error || {}
+    return result['message'] || 'Error connecting to server'
   }
 
   protected commonErrors(){
