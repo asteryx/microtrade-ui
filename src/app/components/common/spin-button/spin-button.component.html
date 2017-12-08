@@ -1,8 +1,6 @@
 <button [type]="type"
-		mat-button
 		[class]='class'
-        [color]="color"        
-        [class.mat-raised-button]="raised"
+        [color]="color"
         [disabled]="loading || disabled"><ng-content></ng-content>
-        <mat-spinner *ngIf="loading" class="btn-spinner" [diameter]="20" color="accent"></mat-spinner>
+        <!--<mat-spinner *ngIf="loading" class="btn-spinner" [diameter]="20" color="accent"></mat-spinner>-->
 </button>

@@ -10,21 +10,15 @@ export class SpinButtonComponent {
   constructor() { }
   
   @Input()
-  color: string = "primary";
-  
-  @Input()
   disabled: boolean = false;
 
   @Input()
   loading: boolean = false;
 
   @Input()
-  raised: boolean = true;
-
-  @Input()
   type: string = "button";
 
   @Input()
-  class: string = "";
+  class: string = "btn";
 
 }

@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatButtonModule, MatProgressSpinnerModule} from '@angular/material';
 import { SpinButtonComponent } from './spin-button.component';
 
 @NgModule({
   imports: [
-    CommonModule, MatButtonModule, MatProgressSpinnerModule
+    CommonModule
   ],
   declarations: [SpinButtonComponent],
   exports: [SpinButtonComponent]

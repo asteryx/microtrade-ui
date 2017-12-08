@@ -6,16 +6,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterModule,
          SpinButtonModule } from '../common'
 
-import { MatInputModule,
-         MatFormFieldModule,
-         MatButtonModule} from '@angular/material';
 
 
 @NgModule({
     declarations: [ResetPasswordComponent],
     imports     : [ BrowserModule, RouterModule, ReactiveFormsModule,
-                    SpinButtonModule, MatFormFieldModule, MatInputModule,
-                    MatButtonModule, FooterModule ],
+                    SpinButtonModule, FooterModule],
 })
 
 export class ResetPasswordModule {}

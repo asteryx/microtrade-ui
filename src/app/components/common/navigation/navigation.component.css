@@ -1,18 +1,3 @@
-.active{
-	background: rgba(0, 0, 0, .04);
-}
-.nav-header {
-    padding: 33px 25px;
-    background-color: #3f51b5;
-    background-image: url("../../../../styles/img/header-skin.png");
-    font: 300 14px/16px Roboto,"Helvetica Neue",sans-serif;
-}
 
-.nav-header mat-icon{
-	font-size: 60px;
-    width: 60px;
-    height: 60px;
-    padding: 1px 0px;
-    color: #DFE4ED;
-}
+
 

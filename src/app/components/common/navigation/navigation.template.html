@@ -1,28 +1,4 @@
 <nav class="navbar-default navbar-static-side" role="navigation">
-    <div class="nav-header">
-        <div class="dropdown profile-element text-center">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <span class="block m-t-xs"> <strong class="font-bold">Example user <b class="caret"></b></strong></span>
-            </a>
-            <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                <li><a [routerLink]="['/profile']">Profile</a></li>
-            </ul>
-        </div>
-        <div class="logo-element text-center">
-            <mat-icon matListIcon>supervisor_account</mat-icon>
-        </div>
-    </div>
-    <mat-nav-list>
-        <a mat-list-item [ngClass]="{active: activeRoute('dashboard')}" routerLink="/dashboard">
-            <mat-icon matListIcon>dashboard</mat-icon>Dashboard</a>
-        <a mat-list-item [ngClass]="{active: activeRoute('orders')}" routerLink="/orders">
-            <mat-icon matListIcon>list</mat-icon>Orders</a>
-        <a mat-list-item [ngClass]="{active: activeRoute('payments')}" routerLink="/payments">
-            <mat-icon matListIcon>monetization_on</mat-icon>Payments</a>
-    </mat-nav-list>
-</nav>
-
-<!--<nav class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
@@ -42,10 +18,10 @@
             <li [ngClass]="{active: activeRoute('dashboard')}">
                 <a [routerLink]="['/dashboard']"><i class="fa fa-th-large"></i> <span class="nav-label">Main view</span></a>
             </li>
-            <li [ngClass]="{active: activeRoute('minorView')}">
-                <a [routerLink]="['/minorView']"><i class="fa fa-desktop"></i> <span class="nav-label">Minor view</span> </a>
+            <li [ngClass]="{active: activeRoute('orders')}">
+                <a [routerLink]="['/orders']"><i class="fa fa-desktop"></i> <span class="nav-label">Orders</span> </a>
             </li>
         </ul>
 
     </div>
-</nav>-->
+</nav>
