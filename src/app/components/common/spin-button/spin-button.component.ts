@@ -21,4 +21,11 @@ export class SpinButtonComponent {
   @Input()
   class: string = "btn";
 
+  @Output()
+  onClick: EventEmitter<any> = new EventEmitter();
+
+  buttonClick(){
+    this.onClick.emit();
+  }
+
 }
