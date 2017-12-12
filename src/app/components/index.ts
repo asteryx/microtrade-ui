@@ -12,5 +12,7 @@ export * from './dashboard/dashboard.component';
 export * from './dashboard/dashboard.module';
 export * from './reset-password/reset-password.component';
 export * from './reset-password/reset-password.module';
+export * from './modal-profile/modal-profile.component';
+export * from './modal-profile/modal-profile.module';
 
 

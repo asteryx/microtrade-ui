@@ -11,5 +11,6 @@ export * from './topnavbar/topnavbar.component';
 export * from './topnavbar/topnavbar.module';
 export * from './spin-button/spin-button.component';
 export * from './spin-button/spin-button.module';
-
+export * from './modal/modal.component';
+export * from './modal/modal.module';
 

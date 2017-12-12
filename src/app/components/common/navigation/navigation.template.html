@@ -1,3 +1,4 @@
+<modal-profile #modalProfile (changed)="getProfile()"></modal-profile>
 <nav class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
         <ul class="nav metismenu" id="side-menu">
@@ -8,7 +9,7 @@
                         <span class="text-muted text-xs block">Example <b class="caret"></b> </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a [routerLink]="['/logout']">Logout</a></li>
+                        <li><a (click)="modalProfile.open()">Profile</a></li>
                     </ul>
                 </div>
                 <div class="logo-element">
@@ -27,6 +28,9 @@
                 <ul class="nav nav-second-level collapse">
                     <li [ngClass]="{active: activeRoute('orders')}">
                         <a [routerLink]="['/orders']">Orders</a>
+                    </li>
+                    <li [ngClass]="{active: activeRoute('payments')}">
+                        <a [routerLink]="['/payments']">Payments</a>
                     </li>
                 </ul>
             </li>

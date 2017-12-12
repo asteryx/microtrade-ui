@@ -54,3 +54,20 @@ export class User {
   }
 
 }
+
+export class UserMessage {
+  
+  constructor(msg:string, to:any='all', title:string='') {
+    this.msg = msg;
+    this.title = title;
+    if(to == 'all'){
+      this.to = to;
+    }else{
+      this.to = (<any>to).name;
+    }
+  }
+
+  msg: string = '';
+  to: string = '';
+  title: string = '';
+}

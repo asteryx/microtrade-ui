@@ -8,7 +8,9 @@ import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import { AppComponent } from './app.component';
 
-import { AuthenticationService } from './services/authentication.service'
+import { AuthenticationService,
+         ProfileService,
+         MessagingService } from './services'
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HeadersInterceptor, ResponseInterceptor } from './app.interceptors';
@@ -30,7 +32,8 @@ import { LayoutsModule,
          LoginModule,
          LogoutModule,
          RegisterModule,
-         ResetPasswordModule
+         ResetPasswordModule,
+         ModalProfileModule
        } from "./components";
 
 
@@ -53,6 +56,7 @@ import { LayoutsModule,
     RegisterModule,
     ErrorsModule,
     ResetPasswordModule,
+    ModalProfileModule,
 
     // Modules
     LayoutsModule,
@@ -74,7 +78,7 @@ import { LayoutsModule,
     },
     {provide: ToastOptions, useClass: CustomOption},
     AuthenticatedGuard, User, UserToken, Permissions,
-    AuthenticationService
+    AuthenticationService, ProfileService, MessagingService
   ],
   bootstrap: [AppComponent]
 })
