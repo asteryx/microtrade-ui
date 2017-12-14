@@ -1,42 +1,37 @@
-<div class="row animated fadeInDown">
-    <div class="col-xs-6 col-xs-offset-3 col-md-5 col-md-offset-3 col-lg-4 col-lg-offset-4">
-        <div class="inline-window">
-            <div class="header">
-                <h3>Microtrade</h3>
-            </div>
-            <div class="body">
-                <p>Register to Microtrade</p>
-                <form class="m-t" role="form" novalidate (ngSubmit)="onSubmit(registerForm)" [formGroup]="registerForm">
-                    
-                    <mat-form-field class="full-width">
-                        <input matInput type="email"  placeholder="Email" name="email" id="email" [maxlength]="150" formControlName="email">
-                    </mat-form-field> 
-
-                    <mat-form-field class="full-width">
-                        <input matInput type="text" placeholder="First Name" name="first_name" id="first_name" formControlName="first_name">
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width">
-                        <input matInput type="text" placeholder="Last Name" name="last_name" id="last_name" formControlName="last_name">
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width">
-                        <input matInput type="password" placeholder="Password" name="password" id="password" formControlName="password">
-                    </mat-form-field>
-
-                    <mat-form-field class="full-width">
-                        <input matInput type="password" placeholder="Password confirmation" name="confirm_password" id="confirm_password" formControlName="confirm_password">
-                    </mat-form-field>
-                    
-                    <spin-button type="submit" class=" mat-primary" [loading]="loading" [disabled]="registerForm.invalid">Register</spin-button>
-                    
-                    <div class="text-center margin-top5">
-                        <p class="text-muted"><small>Already have an account?</small></p>
-                        <a mat-button mat-raised-button class="btn btn-sm btn-white" [routerLink]="['/login']">Login</a>
-                    </div>
-                </form>
-            </div>
+<div class="middle-box text-center loginscreen animated fadeInDown">
+    <div>
+        <div>
+            <h1 class="logo-name">M</h1>
         </div>
+        <h3>Register to Microtrade</h3>
+            <form class="m-t" role="form" novalidate (ngSubmit)="onSubmit(registerForm)" [formGroup]="registerForm">
+                
+                <div class="form-group" [class.has-error]="!registerForm.controls['email'].pristine && registerForm.controls['email'].errors != null">
+                    <input type="email" class="form-control" placeholder="Email" name="email" id="email" [maxlength]="150" formControlName="email">
+                </div>
+
+                <div class="form-group" [class.has-error]="!registerForm.controls['first_name'].pristine && registerForm.controls['first_name'].errors != null">
+                    <input type="text" class="form-control" placeholder="First name" name="first_name" id="first_name" formControlName="first_name">
+                </div>
+
+                <div class="form-group" [class.has-error]="!registerForm.controls['last_name'].pristine && registerForm.controls['last_name'].errors != null">
+                    <input type="text" class="form-control" placeholder="Last name" name="last_name" id="last_name" formControlName="last_name">
+                </div>
+
+                <div class="form-group" [class.has-error]="!registerForm.controls['password'].pristine && registerForm.controls['password'].errors != null">
+                    <input type="password" class="form-control" placeholder="Password" name="password" id="password" (keyup)="keyUpPassword()" formControlName="password">
+                </div>
+                <div class="form-group" [class.has-error]="!registerForm.controls['confirm_password'].pristine && registerForm.controls['confirm_password'].errors != null">
+                    <input type="password" class="form-control" placeholder="Password confirmation" name="confirm_password" id="confirm_password" formControlName="confirm_password">
+                </div>
+                
+                <spin-button type="submit" [class]="'btn btn-primary block full-width m-b'" [loading]="loading" [disabled]="registerForm.invalid">Register</spin-button>
+                
+                <div class="text-center margin-top5">
+                    <p class="text-muted"><small>Already have an account?</small></p>
+                    <a class="btn btn-sm btn-white btn-block" [routerLink]="['/login']">Login</a>
+                </div>
+            </form>
         <p class="m-t footer-wrap"> <small><footer></footer></small> </p>
     </div>
 </div>

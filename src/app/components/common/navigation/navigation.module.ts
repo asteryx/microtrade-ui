@@ -2,15 +2,12 @@ import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
 import {RouterModule} from "@angular/router";
 import {NavigationComponent} from "./navigation.component";
-import {MatSidenavModule,
-        MatListModule,
-        MatIconModule} from "@angular/material";
+import { ModalProfileModule } from "../../modal-profile/modal-profile.module";
 
 
 @NgModule({
     declarations: [NavigationComponent],
-    imports     : [BrowserModule, RouterModule, MatSidenavModule,
-                   MatListModule, MatIconModule],
+    imports     : [BrowserModule, RouterModule, ModalProfileModule],
     exports     : [NavigationComponent],
 })
 

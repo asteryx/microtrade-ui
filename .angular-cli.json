@@ -24,8 +24,7 @@
         "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "../node_modules/metismenu/dist/metisMenu.min.css",
-        "./styles/css/animate.css",
-        "./styles/css/styles.css"
+        "./styles/css/microtrade.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
